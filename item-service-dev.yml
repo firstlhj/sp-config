@@ -25,6 +25,11 @@ server:
 ---
 spring:
   profiles: Item8003
-
+cloud:
+  config:
+    override-none: true
 server:
   port: 8003
+
+
+
