@@ -18,17 +18,17 @@ spring:
 ##      exposure:
 ##        include: hystrix.stream
 #
----
+#---
 #spring:
 #  profiles:
 #    active: Item8002
 #
 server:
   port: 8002
----
-#spring:
-#  profiles:
-#    active: Item8003
-
-server:
-  port: 8003
+#---
+##spring:
+##  profiles:
+##    active: Item8003
+#
+#server:
+#  port: 8003
