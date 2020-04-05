@@ -51,5 +51,5 @@ mybatis:
     map-underscore-to-camel-case: true
 
 server:
-  port: 80011
+  port: 8011
 
