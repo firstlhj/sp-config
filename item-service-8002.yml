@@ -4,7 +4,8 @@ spring:
   cloud:
     config:
       override-none: true
-
+  profiles:
+    active: Item8002
 
 
 #eureka:
@@ -26,9 +27,9 @@ spring:
 server:
   port: 8002
 #---
-##spring:
-##  profiles:
-##    active: Item8003
+#spring:
+#  profiles:
+#    active: Item8003
 #
 #server:
 #  port: 8003
