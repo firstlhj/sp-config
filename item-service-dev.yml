@@ -7,9 +7,6 @@ spring:
 
 
 
-#server:
-#  port: 8002
-
 #eureka:
 #  client:
 #    service-url:
@@ -21,14 +18,14 @@ spring:
 ##      exposure:
 ##        include: hystrix.stream
 #
-#---
+---
 #spring:
 #  profiles:
 #    active: Item8002
 #
-#server:
-#  port: 8002
-#---
+server:
+  port: 8002
+---
 #spring:
 #  profiles:
 #    active: Item8003
