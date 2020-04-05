@@ -1,21 +1,29 @@
+#spring:
+#  application:
+#    name: itemservice
 spring:
-  application:
-    name: itemservice
-    
-#server:
-#  port: 8002
-#
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: item-service
+      profile: dev
+
+##server:
+##  port: 8002
+##
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:10086/eureka, http://eureka2:10087/eureka
+##
+##management:
+##  endpoints:
+##    web:
+##      exposure:
+##        include: hystrix.stream
 #
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: hystrix.stream
-
 ---
 spring:
   profiles: Item8002
@@ -25,11 +33,6 @@ server:
 ---
 spring:
   profiles: Item8003
-cloud:
-  config:
-    override-none: true
+
 server:
   port: 8003
-
-
-
