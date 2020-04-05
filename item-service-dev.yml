@@ -1,7 +1,7 @@
 spring:
   application:
     name: itemservice
-  profiles: Item8002
+#  profiles: Item8002
   cloud:
     config:
       override-none: true
