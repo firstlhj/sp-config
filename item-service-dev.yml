@@ -1,7 +1,6 @@
 spring:
   application:
     name: itemservice
-#  profiles: Item8002
   cloud:
     config:
       override-none: true
@@ -22,14 +21,14 @@ eureka:
 ##        include: hystrix.stream
 #
 ---
-#spring:
-#  profiles: Item8002
+spring:
+  profiles: Item8002
 
 server:
   port: 8002
 ---
-#spring:
-#  profiles: Item8003
-#
+spring:
+  profiles: Item8003
+
 server:
   port: 8003
