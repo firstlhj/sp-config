@@ -1,14 +1,8 @@
-#spring:
-#  application:
-#    name: itemservice
 spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server
-      name: item-service
-      profile: dev
+  application:
+    name: itemservice
+
+ 
 
 ##server:
 ##  port: 8002
