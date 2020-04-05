@@ -10,26 +10,28 @@ spring:
 #server:
 #  port: 8002
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka1:10086/eureka, http://eureka2:10087/eureka
-##
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka1:10086/eureka, http://eureka2:10087/eureka
+###
 ##management:
 ##  endpoints:
 ##    web:
 ##      exposure:
 ##        include: hystrix.stream
 #
----
-spring:
-  profiles: Item8002
-
-server:
-  port: 8002
----
-spring:
-  profiles: Item8003
+#---
+#spring:
+#  profiles:
+#    active: Item8002
+#
+#server:
+#  port: 8002
+#---
+#spring:
+#  profiles:
+#    active: Item8003
 
 server:
   port: 8003
