@@ -24,7 +24,8 @@ zuul:
   routes:
    sso-server.path: /sso-server/**
    sso-server.service-id: sso-server
-   userservices: /user-service/**
+   userservices: /userservices/**
+   userservices.service-id: userservices
 
 
   host.socket-timeout-millis: 60000
