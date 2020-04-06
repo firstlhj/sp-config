@@ -18,6 +18,17 @@ uul:
 #    itemservice: /item-service/**
 #    user-service: /user-service/**
 #    order-service: /order-service/**
+zuul:
+  routes:
+   sso-server.path: /sso-server/**
+   sso-server.service-id: sso-server
+
+
+  host.socket-timeout-millis: 60000
+  host.connect-timeout-millis: 10000
+  #Zuul丢失Cookie的解决方案：https://blog.csdn.net/lindan1984/article/details/79308396
+  sensitive-headers:
+
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 1000
